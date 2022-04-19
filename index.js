@@ -29,11 +29,11 @@ const app = new Vue({
     },
 
     created: function(){
-        let datosLocalS = JSON.parse(localStorage.getItem('gim-vue'))
-        if(datosLocalS === null){
+        let datosLocalStorage = JSON.parse(localStorage.getItem('gim-vue'))
+        if(datosLocalStorage === null){
             this.tareas = []
         }else {
-            this.tareas = datosLocalS
+            this.tareas = datosLocalStorage
         }
     },
 
